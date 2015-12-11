@@ -19,6 +19,6 @@ lastFloor = last . floors
 
 main :: IO ()
 main = do
-  input <- getContents
+  input <- readFile "inputs/advent01.txt"
   putStrLn $ show $ lastFloor input
   putStrLn $ show $ (fromJust $ firstBasementPosition input) + 1
